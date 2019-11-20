@@ -33,7 +33,7 @@ public class FarmerRegisterController {
 			}
 
 
-			@RequestMapping(value = "/FarmerRegister" , method = RequestMethod.GET)
+			@RequestMapping(value = "/FarmerRegisterHello" , method = RequestMethod.GET)
 			public ModelAndView hello(HttpServletResponse response) throws IOException {
 				ModelAndView mv = new ModelAndView();
 				mv.setViewName("FarmerRegister");
@@ -75,6 +75,15 @@ public class FarmerRegisterController {
 
 				return mv;
 			}
+			
+			@RequestMapping(value = "/FarmerLogin", method = RequestMethod.GET)
+			public ModelAndView displayFarmerLoginForm() {
+				ModelAndView mv = new ModelAndView("FarmerRegister");
+				mv.addObject("headerMessage", "Add Farmer Registration Details");
+				mv.addObject("farmerRegister", new FarmerRegister());
+				return mv;
+			}
+
 		/*
 			@RequestMapping(value = "/editUser/{id}", method = RequestMethod.GET)
 			public ModelAndView displayEditUserForm(@PathVariable Long id) {

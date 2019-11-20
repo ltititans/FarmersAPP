@@ -124,7 +124,7 @@
     <body>
 <div class="form-style-10">
     <h1>FARMERLOGIN<span></span></h1>
-    <form>
+    <form modelAttribute = "farmerLogin" method = "POST">
         <div class="section"><span>1</span>FARMERLOGIN</div>
         <div class="inner-wrap">
         <label>Farmer ID<input type="text" name="farmer_id" /></label>

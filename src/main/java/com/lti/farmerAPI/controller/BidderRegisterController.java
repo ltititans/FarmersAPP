@@ -30,7 +30,7 @@ public class BidderRegisterController {
 		}
 
 
-		@RequestMapping(value = "/BidderRegister", method = RequestMethod.GET)
+		@RequestMapping(value = "/BidderRegisterHello", method = RequestMethod.GET)
 		public ModelAndView hello(HttpServletResponse response) throws IOException {
 			ModelAndView mv = new ModelAndView();
 			mv.setViewName("BidderRegister");
@@ -70,6 +70,15 @@ public class BidderRegisterController {
 				return new ModelAndView("error");
 			}
 
+			return mv;
+		}
+		
+		
+		@RequestMapping(value = "/BidderLogin", method = RequestMethod.GET)
+		public ModelAndView displayBidderLoginForm() {
+			ModelAndView mv = new ModelAndView("BidderRegister");
+			mv.addObject("headerMessage", "Add Bidder Registration Details");
+			mv.addObject("bidderRegister", new BidderRegister());
 			return mv;
 		}
 	/*
