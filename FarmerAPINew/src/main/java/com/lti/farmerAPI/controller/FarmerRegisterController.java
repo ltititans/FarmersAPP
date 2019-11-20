@@ -15,7 +15,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.lti.farmerAPI.entity.FarmerRegister;
 import com.lti.farmerAPI.service.FarmerRegisterService;
 
-@Controller("/farmer")
+@Controller
+@RequestMapping("/farmer")
 
 public class FarmerRegisterController {
 	
