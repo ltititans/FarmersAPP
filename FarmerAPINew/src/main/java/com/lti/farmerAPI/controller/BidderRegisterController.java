@@ -14,7 +14,8 @@ import org.springframework.web.servlet.ModelAndView;
 import com.lti.farmerAPI.entity.BidderRegister;
 import com.lti.farmerAPI.service.BidderRegisterService;
 
-@Controller(value="/bidder")
+@Controller
+@RequestMapping("/bidder")
 public class BidderRegisterController {
 	// Constructor based Dependency Injection
 		private BidderRegisterService bidderRegisterService;
