@@ -30,7 +30,7 @@ public class BidderRegisterController {
 		}
 
 
-		@RequestMapping(value = "/BidderRegister", method = RequestMethod.GET)
+		@RequestMapping(value = "/BidderRegisterHello", method = RequestMethod.GET)
 		public ModelAndView hello(HttpServletResponse response) throws IOException {
 			ModelAndView mv = new ModelAndView();
 			mv.setViewName("BidderRegister");

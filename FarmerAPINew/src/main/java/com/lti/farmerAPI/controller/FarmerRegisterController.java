@@ -33,7 +33,7 @@ public class FarmerRegisterController {
 			}
 
 
-			@RequestMapping(value = "/FarmerRegister" , method = RequestMethod.GET)
+			@RequestMapping(value = "/FarmerRegisterHello" , method = RequestMethod.GET)
 			public ModelAndView hello(HttpServletResponse response) throws IOException {
 				ModelAndView mv = new ModelAndView();
 				mv.setViewName("FarmerRegister");
